@@ -1,0 +1,27 @@
+@media (max-width:1230px){
+
+    #services {
+        flex-direction:column;
+    }
+    #client{
+         flex-direction:column;
+        
+    }
+    #navbar {
+
+        flex-direction:column;
+          text-align:center;
+          
+      }
+    
+        #navbar ul li a {
+            
+            
+            font-size:0.7rem;
+           margin-right:-4px;
+            margin-left:-4px;
+
+        }
+    
+
+    }

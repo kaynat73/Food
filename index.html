@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best online food Delivery in India</title>
+    <link href='https://fonts.googleapis.com/css?family=Chilanka' rel='stylesheet'>
+
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* CSS Variables */
+        :root {
+            --navbar-height: 59px;
+
+        }
+
+        /* Navigation bar */
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+
+        }
+
+        /* Negigation bar img */
+        #logo {
+            margin: 10px 34px;
+
+        }
+
+        #logo img {
+
+            margin: 8px 10px;
+            border-radius: 50%;
+        }
+
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Chilanka';
+            font-size: 22px;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.9;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.1em;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 3px 22px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #navbar ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Home section */
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            height: 590px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: opx;
+            height: 710px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.75;
+            background: url('https://c.ndtvimg.com/2018-11/o2l9mdao_pizza_625x300_01_November_18.jpg') no-repeat center center/cover;
+
+        }
+
+        #home h1 {
+            color: black;
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Baloo Bhai';
+
+
+
+        }
+
+        #home p {
+            color: black;
+            text-align: center;
+
+            font-family: 'Chilanka';
+            font-size: 22px;
+            margin: 4px;
+        }
+
+        /* services section */
+
+        #services {
+            margin: 5px;
+            display: flex;
+
+
+        }
+
+        #services .box {
+            border: 2px solid black;
+            padding: 1px;
+            margin: 16px 4px;
+            border-radius: 20px;
+            background-color: rgba(209, 201, 201, 0.931);
+            font-family: 'Chilanka';
+            margin-bottom: 20px;
+
+
+        }
+
+        #services img {
+
+            display: block;
+            margin: auto;
+
+
+        }
+
+        /* clients  section */
+        #client-section {
+
+            position: relative;
+            padding: 20px;
+
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('https://images-prod.healthline.com/hlcmsresource/images/AN_images/healthy-eating-ingredients-1296x728-header.jpg');
+            width: 100%;
+            height: 94%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #client {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        #client img {
+            height: 120px;
+
+        }
+
+        .client-item {
+            padding: 40px;
+        }
+
+        /* contact section */
+        #contact {
+            position: relative;
+
+
+        }
+
+        #contact::before {
+
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            background: url('https://img.freepik.com/free-photo/contact-us_36325-2135.jpg?size=626&ext=jpg') no-repeat center center/cover;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 50%;
+
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 45px;
+            text-align: center;
+            
+        }
+
+        /* utility classes */
+        .h-primary {
+            font-size: 2.2rem;
+            padding: 18px;
+            font-family: 'Baloo Bhai';
+
+        }
+
+        .h-secondary {
+            font-size: 1.6rem;
+            padding: 18px;
+            font-family: 'Baloo Bhai';
+
+        }
+
+        .btn {
+            padding: 10px 27px;
+            border: 2px solid black;
+            background-color: rgba(211, 44, 161, 0.575);
+            color: black;
+            margin: 17px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+
+        .button {
+            padding: 10px 27px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all .3s ease;
+            border-radius: 10px;
+            
+            margin: 17px;
+            align-items: center;
+            
+          text-align:center;
+         
+            
+        }
+
+        button:hover {
+            background-color: rgba(211, 44, 161, 0.575);
+            color: black;
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="https://i.pinimg.com/280x280_RS/0b/8a/fc/0b8afcac091f70ec102e2e2e031085c5.jpg" height="76px">;
+
+        </div>
+
+
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#client-section">Our Client</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to My OnlineFoodDelivery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatem nesciun.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+
+        <button class="btn"> Order Now</button>
+
+    </section>
+    <hr>
+    <section class="Services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://static.toiimg.com/photo/67689131.cms" height="100px">
+
+                <h2 class="h-secondary">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, possimus.
+                    Exercitationem illo ducimus,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+                    consequuntur at, dicta ratione incidunt quod soluta eius, nesciunt iure totam possimus obcaecati.
+                    aspernatur mollitia i my self kaynat.</p>
+            </div>
+            <div class="box">
+                <img src="https://www.sheknows.com/wp-content/uploads/2018/08/g1xykjqwbfmtcqalps1n.jpeg?w=448"
+                    height="100px">
+
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, possimus.
+                    Exercitationem illo ducimus,
+                    aspernatur mollitia iure Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
+                    adipisci expedita beatae labore libero, eligendi consectetur voluptatibus corrupti suscipit quo.
+                    Ipsam maculpa..</p>
+            </div>
+
+            <div class="box">
+                <img src="https://banner2.cleanpng.com/20190602/lci/kisspng-portable-network-graphics-delivery-clip-art-image-shipping-and-handling-5cf4726a1dc639.529774571559523946122.jpg"
+                    height="100px">
+
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, possimus.
+                    Exercitationem illo ducimus,
+                    aspernatur mollitia iure iste hic Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                    deleniti culpa quaerat ex minima modi possimus ullam corrupti distinctio rerum, aanimi repellat?.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section>
+        <section id="client-section">
+            <h1 class="h-primary center">Our Client</h1>
+            <div id="client">
+                <div class="client-item">
+                    <img src="https://www.freepnglogos.com/uploads/apple-logo-png/file-apple-logo-black-svg-wikimedia-commons-1.png"
+                        alt="">
+                </div>
+
+                <div class="client-item">
+                    <img src="https://www.zdnet.com/a/img/resize/0d74b93e0fa4c8cc66f2a515bb14589e83b0ccd3/2014/08/27/0efdabe1-2da9-11e4-9e6a-00505685119a/microsoft-logo.jpg?auto=webp&width=1092"
+                        alt="">
+                </div>
+
+                <div class="client-item">
+                    <img src="https://qph.fs.quoracdn.net/main-qimg-ad3b40a807e04e32263b736fe9197524-lq" alt="">
+                </div>
+
+                <div class="client-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Skype_logo.svg/2560px-Skype_logo.svg.png"
+                        alt="">
+                </div>
+                <div class="client-item">
+                    <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg"
+                        alt="">
+                </div>
+
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="h-primary center">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="name" name="name" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Email:</label>
+                        <input type="email" name="name" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Phone No:</label>
+                        <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+
+                        <div class="form-group">
+                            <label for="name">Message:</label>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                placeholder="Your Message...."></textarea>
+
+                        </div>
+                        <div>
+                            <button class="button
+                            ">Submit</button>
+                        </div>
+                </form>
+
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineFoodDelivery.com. All right reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
